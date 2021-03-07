@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&display=swap');
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.animated {
+    opacity: 0;
+    animation-name: appear;
+    animation-delay: 1s;
+    animation-duration: 1s;
+    transition-timing-function: ease-in;
+    animation-fill-mode: forwards;
+}
+
+@media (orientation: portrait) {
+    #coverphoto {
+        position: relative;
+        left: 0em;
+        right: 0em;
+        top: 3em;
+        height: 14em;
+        background-image: linear-gradient(to bottom, #523b1c, #ffffff00 50%), url('img/ctl-background-small.jpg');
+        background-size: cover;
+        background-position: center bottom;
+    }
+    #contactscreen {
+        height: 100vh;
+        width: 100vw;
+        color: #513a1b;
+        font-size: 3vh;
+        /*text-shadow: 0 0 0.25em black;*/
+        position: relative;
+    }
+    #schoolname {
+        display: inline-block;
+        text-align: center;
+        position: absolute;
+        top: 1em;
+        left: 0em;
+        right: 0em;
+        font-variant: small-caps;
+        font-weight: 700;
+    }
+    #schoolname #l1 {
+        font-size: 115%;
+    }
+    #schoolname #l2 {
+        font-size: 285%;
+        color: #fbf7f3;
+    }
+    #motto {
+        color: #fbf7f3;
+        font-variant: normal;
+        padding-top: 0.25em;
+        border-top: 1px solid #fbf7f36b;
+        font-size: 70%;
+        font-weight: 300;
+    }
+    #contact {
+        text-align: center;
+        position: absolute;
+        bottom: 5em;
+        left: 0em;
+        right: 0em;
+        font-variant: small-caps;
+        height: 17em;
+        justify-content: space-between;
+        display: flex;
+        flex-direction: column;
+        font-size: 0.7em;
+        font-style: normal;
+    }
+    #contact table {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: left;
+    }
+    #contactscreen a {
+        text-decoration: none;
+        color: #513a1b;
+    }
+    .icon-contact {}
+    .icon-contact .icon {
+        width: 2.6em;
+        height: 2.6em;
+        margin-right: 0.5em;
+        opacity: 0.7;
+        display: none;
+    }
+    #contact #l1 {
+        font-size: 210%;
+    }
+    #contact #l2 {
+        font-size: 100%;
+    }
+    #contact #l3 {
+        font-size: 210%;
+    }
+    #contact #l4 {
+        font-size: 198%;
+    }
+    #contact #l5 {
+        font-size: 150%;
+    }
+    #more {
+        position: absolute;
+        right: 2em;
+        bottom: 1em;
+        background-color: #523b1c;
+        width: 2em;
+        height: 2em;
+        border-radius: 1em;
+        text-align: center;
+        vertical-align: middle;
+        background-image: url('img/down-arrow_light.svg');
+        background-repeat: no-repeat;
+        background-size: 60%;
+        background-position: center 80%;
+    }
+    #gclasslink {
+        position: absolute;
+        left: 2em;
+        bottom: 1em;
+        text-align: center;
+        background-color: #523b1c;
+        width: 8em;
+        height: 2em;
+        border-radius: 1em;
+        color: #fbf7f3;
+
+        /* remove after more content added */
+        left: calc(50% - 5em);
+    }
+    #gclasslink a{
+        font-size: 0.5em;
+        line-height: 0.5em;
+        color: #fbf7f3;
+    }
+    #gclasslink img {
+        height: 1.5em;
+        margin-left: 0.3em;
+        vertical-align: middle;
+    }
+}
+
+@media (orientation: landscape) {
+    #coverphoto {
+        position: absolute;
+        left: 0vw;
+        right: 0vw;
+        top: 0em;
+        bottom: 0px;
+        background-image: linear-gradient(to right, #523b1c, #ffffff00 50%), url('img/ctl-background-large.jpg');
+        background-size: cover;
+        background-position: center bottom;
+    }
+    #contactscreen {
+        height: 100vh;
+        color: #fbf7f3;
+        font-size: 2em;
+        text-shadow: 0 0 0.25em black;
+        position: relative;
+        font-size: 4vh;
+    }
+    #gclasslink {
+        position: absolute;
+        right: 2em;
+        bottom: 2em;
+        line-height: 1em;
+        font-size: 0.8em;
+    }
+    #gclasslink img {
+        opacity: 0.7;
+        height: 1.5em;
+        margin-left: 0.3em;
+        vertical-align: middle;
+    }
+    #gclasslink a {
+        color: #fbf7f3;
+        font-size: 1em;
+    }
+    #contact {
+        text-align: center;
+        position: absolute;
+        bottom: 2em;
+        left: 2em;
+        font-variant: small-caps;
+        height: 14em;
+        justify-content: space-between;
+        display: flex;
+        flex-direction: column;
+        font-size: 0.8em;
+        font-style: normal;
+    }
+    #contact #l1 {
+        font-size: 185%;
+    }
+    #contact #l2 {
+        font-size: 80%;
+        font-variant: normal;
+        text-align: left;
+    }
+    #contact #l3 {
+        font-size: 165%;
+    }
+    #contact #l4 {
+        font-size: 155%;
+    }
+    #contact #l5 {
+        font-size: 115%;
+    }
+    #more {
+        position: absolute;
+        left: calc(50% - 1em);
+        bottom: 1em;
+        background-color: #fbf7f38f;
+        width: 2em;
+        height: 2em;
+        border-radius: 1em;
+        text-align: center;
+        vertical-align: middle;
+        background-image: url('img/down-arrow.svg');
+        background-repeat: no-repeat;
+        background-size: 60%;
+        background-position: center 80%;
+    }
+    .icon-contact {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+    .icon-contact .icon {
+        width: 1.3em;
+        height: 1.3em;
+        margin-right: 0.5em;
+        opacity: 0.7;
+    }
+    #schoolname {
+        display: inline-block;
+        text-align: center;
+        position: absolute;
+        top: 2em;
+        left: 2em;
+        font-variant: small-caps;
+        font-weight: 700;
+    }
+    #schoolname #l1 {
+        font-size: 100%;
+    }
+    #schoolname #l2 {
+        font-size: 250%;
+    }
+    #motto {
+        font-variant: normal;
+        margin-top: 0.5em;
+        padding-top: 0.7em;
+        border-top: 1px solid #fbf7f36b;
+        font-size: 70%;
+        font-weight: 300;
+    }
+    #contactscreen a {
+        text-decoration: none;
+        color: #fbf7f3;
+    }
+    #moreinfo {
+        margin-left: 20vw;
+        margin-right: 20vw;
+    }
+    #moreinfo p {
+        text-align: justify;
+    }
+}
