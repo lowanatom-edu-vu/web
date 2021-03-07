@@ -1,12 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&display=swap');
 html {
     scroll-behavior: smooth;
+    
+    height: 100%;
+    height: -moz-available;
+    /* WebKit-based browsers will ignore this. */
+    height: -webkit-fill-available;
+    /* Mozilla-based browsers will ignore this. */
+    height: fill-available;
 }
 
 body {
     margin: 0px;
     padding: 0px;
     font-family: 'Open Sans', sans-serif;
+    height: 100%;
+    height: -moz-available;
+    /* WebKit-based browsers will ignore this. */
+    height: -webkit-fill-available;
+    /* Mozilla-based browsers will ignore this. */
+    height: fill-available;
 }
 
 table {
@@ -146,11 +159,10 @@ table {
         height: 2em;
         border-radius: 1em;
         color: #fbf7f3;
-
         /* remove after more content added */
         left: calc(50% - 5em);
     }
-    #gclasslink a{
+    #gclasslink a {
         font-size: 0.5em;
         line-height: 0.5em;
         color: #fbf7f3;
