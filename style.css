@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&display=swap');
 html {
     scroll-behavior: smooth;
-    
-    height: 100%;
     height: -webkit-fill-available;
 }
 
@@ -10,12 +8,8 @@ body {
     margin: 0px;
     padding: 0px;
     font-family: 'Open Sans', sans-serif;
-    height: 100%;
-    height: -moz-available;
-    /* WebKit-based browsers will ignore this. */
-    height: -webkit-fill-available;
-    /* Mozilla-based browsers will ignore this. */
-    height: fill-available;
+    min-height: 100vh;
+    min-height: -webkit-fill-available;
 }
 
 table {
